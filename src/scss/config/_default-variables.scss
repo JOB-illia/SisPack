@@ -1,0 +1,24 @@
+// Fonts
+$f-main: "Montserrat", sans-serif;
+
+// Font sizes
+$fz-root: 15;
+
+//wrap content;
+$wrap-content: 1275px;
+$wrap-content-mini: 1140px;
+// Colors
+$c-white: #ffffff;
+$c-black: #000000;
+$c-background-body: #fafafa;
+$c-purple: #393185;
+$c-red: #d84444;
+$c-hover: #d84444;
+
+// Time
+$time-fast: 300ms;
+
+// Timing functions
+$timing-functions: (
+	"easeInOutCubic": cubic-bezier(0.645, 0.045, 0.355, 1),
+);

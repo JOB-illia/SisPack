@@ -1,0 +1,148 @@
+.header {
+	position: relative;
+
+	// .header__top
+
+	&__top {
+		height: 116px;
+		background: $c-white;
+	}
+
+	// .header__row
+
+	&__row {
+		padding: 0 15px;
+		@include container($wrap-content);
+		@include space-between();
+		height: 100%;
+	}
+
+	// .header__item
+
+	&__item {
+		@include flc-end();
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex-basis: rem(228);
+		margin-left: -4px;
+		margin-top: 1px;
+		img {
+			@include adapt-img();
+		}
+	}
+
+	// .header__contact
+	&__contact {
+		@include flc-start();
+		align-items: stretch;
+		margin-right: -40px;
+		margin-top: 3px;
+		> i {
+			margin-right: 20px;
+		}
+	}
+	// .header__link-contact
+	&__link-contact {
+		text-decoration: none;
+		font-style: normal;
+		font-weight: bold;
+		font-size: rem(15);
+		line-height: rem(20);
+		text-align: center;
+		text-transform: uppercase;
+		color: $c-purple;
+		margin-right: 40px;
+		transition: 0.5s;
+
+		&:hover {
+			color: $c-hover;
+		}
+	}
+	// .header__languange
+
+	&__languange {
+		position: relative;
+	}
+	// .header__exit
+	&__exit {
+		margin-right: 34px;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	// .header__head
+
+	&__head {
+		@include flc-end();
+		cursor: pointer;
+		&:hover {
+			.header__lang-active {
+				color: $c-hover;
+			}
+		}
+	}
+
+	// .header__lang-active
+
+	&__lang-active {
+		@extend .header__link-contact;
+		margin-right: 10.5px;
+	}
+
+	// .header__body
+
+	&__body {
+		@include full-abs();
+		bottom: auto;
+		top: calc(100% + 10px);
+		width: 100px;
+		padding: 20px 30px;
+		background: $c-white;
+		box-shadow: 0px 6px 24px -5px rgba(0, 0, 0, 0.75);
+		margin: auto;
+		right: -50%;
+		transform: translate(-0%, -30px);
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.4s;
+	}
+
+	// .header__lang-select
+
+	&__lang-select {
+		@extend .header__link-contact;
+		margin-bottom: 10px;
+		display: block;
+	}
+}
+.icon-phone {
+	@include icon(14px, 14px, "phone.svg");
+	display: block;
+}
+.icon-exit {
+	@include icon(21px, 24px, "exit.svg");
+	display: block;
+}
+.icon-arrow-white {
+	@include icon(8px, 5px, "arrow-down-white.svg");
+	display: block;
+}
+.arrow-down {
+	@include icon(8px, 5px, "arrow-down.svg");
+	display: block;
+	transition: 0.5s;
+}
+._gamburder-head-active {
+	> i {
+		transform: rotate(-180deg);
+	}
+}
+._gamburger-body-active {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-30%, 0);
+}
