@@ -3,6 +3,10 @@ body {
 	font-family: $f-main, sans-serif;
 	background-color: $c-background-body;
 }
+.workspace {
+	position: relative;
+	overflow: hidden;
+}
 html {
 	font-size: $fz-root + px;
 	letter-spacing: normal;

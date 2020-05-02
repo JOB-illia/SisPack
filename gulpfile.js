@@ -9,8 +9,7 @@ const gulp = require('gulp'),
 	cssnano = require('gulp-cssnano'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglifyjs'),
-	path = require('path'),
-	fontgen = require('gulp-fontgen');
+	path = require('path');
 
 const conf = {
 	path: {
@@ -179,11 +178,12 @@ if (process.env.NODE_ENV === 'production') {
 	);
 }
 
-gulp.task('fontgen', function () {
-	return gulp.src("./src/*.{ttf,otf}")
-		.pipe(fontgen({
-			dest: "./public/fonts"
-		}));
-});
 
-gulp.task('default', ['fontgen']);
+//gulp.task('fontgen', function () {
+//	return gulp.src("./src/*.{ttf,otf}")
+//		.pipe(fontgen({
+//			dest: "./public/fonts"
+//		}));
+//});
+
+//gulp.task('default', ['fontgen']);

@@ -1,11 +1,16 @@
 .header {
 	position: relative;
-
 	// .header__top
 
 	&__top {
 		height: 116px;
 		background: $c-white;
+		@include mmax ($md2){
+			height: 80px;
+		}
+		@include mmax ($md3){
+			height: 65px;
+		}
 	}
 
 	// .header__row
@@ -15,12 +20,23 @@
 		@include container($wrap-content);
 		@include space-between();
 		height: 100%;
+		@include mmax ($md3){
+			flex-wrap: nowrap;
+
+		}
 	}
 
 	// .header__item
 
 	&__item {
 		@include flc-end();
+		@include mmax ($md3){
+			justify-content: flex-start;
+			&:nth-child(3){
+				flex-basis: 100%;
+				justify-content: flex-end;
+			}
+		}
 	}
 
 	// .header__logo
@@ -32,6 +48,17 @@
 		img {
 			@include adapt-img();
 		}
+		@include mmax ($md2){
+			margin-left: 60px;
+		}
+		@include mmax ($md3){
+			flex-basis: rem(120);
+			margin-left: 50px;
+			margin-top: 10px;
+			>img {
+				transform: scale(1.2);
+			}
+		}
 	}
 
 	// .header__contact
@@ -40,8 +67,41 @@
 		align-items: stretch;
 		margin-right: -40px;
 		margin-top: 3px;
+
 		> i {
 			margin-right: 20px;
+		}
+		@include mmax ($md2){
+			margin-right: 0;
+			display: block;
+			> i {
+				display: block;
+			}
+			.header__contact-body {
+				position: fixed;
+				width: 100%;
+				background:$c-purple;
+				top: 82px;
+				left: 0;
+				z-index: 9999;
+				opacity: 0; 
+				 visibility: hidden; 
+				 transform: translateY(-10%); 
+				 transition: .5s;
+				
+				> a {
+					color: $c-white;
+					display: block;
+					text-align: left;
+					padding: 20px;
+					font-size: rem(20);
+				}
+			}
+			._phone-active {
+				visibility: visible;
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 	}
 	// .header__link-contact
@@ -70,8 +130,23 @@
 	&__exit {
 		margin-right: 34px;
 		transition: 0.5s;
+		@include flc-start();
+		text-decoration: none;
+		font-weight: 600;
+		> p {
+			display: none;
+		}
 		&:hover {
 			transform: scale(1.1);
+		}
+		@include mmax ($md2){
+			height: 50px;
+			@include flc-start();
+			background:$c-white;
+			width: 100%;
+			> p {
+				display: block;
+			}
 		}
 	}
 	// .header__head
@@ -107,6 +182,7 @@
 		right: -50%;
 		transform: translate(-0%, -30px);
 		opacity: 0;
+		z-index: 999;
 		visibility: hidden;
 		transition: 0.4s;
 	}
@@ -117,6 +193,14 @@
 		@extend .header__link-contact;
 		margin-bottom: 10px;
 		display: block;
+	}
+	.icon-search--click {
+		width: 30px;
+		height: 30px;
+		background: $c-purple url(../i/search.svg) center center no-repeat;
+		border-radius: 25px;
+		margin-right: 20px;
+		margin-top: 1px;;
 	}
 }
 .icon-phone {
@@ -145,4 +229,14 @@
 	opacity: 1;
 	visibility: visible;
 	transform: translate(-30%, 0);
+}
+.txt-default {
+			display: block;
+				margin: 0;
+				font-size: rem(16);
+				color: $c-white;
+				padding-left: 20px;
+				margin-right: 20px;
+				text-decoration: none;
+				color: $c-purple;
 }

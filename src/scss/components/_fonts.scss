@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../../fonts/AvenirNextCyr-Bold.eot");
+	src: local("../../fonts/Avenir Next Cyr Bold"), local("../../fonts/AvenirNextCyr-Bold"),
+		url("../../fonts/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
+		url("../../fonts/AvenirNextCyr-Bold.woff") format("woff"),
+		url("../../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../../fonts/AvenirNextCyr-Light.eot");
+	src: local("../../fonts/Avenir Next Cyr Light"), local("../../fonts/AvenirNextCyr-Light"),
+		url("../../fonts/AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"),
+		url("AvenirNextCyr-Light.woff2") format("woff2"), url("../../fonts/AvenirNextCyr-Light.woff") format("woff"),
+		url("../../fonts/AvenirNextCyr-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../../fonts/AvenirNextCyr-Heavy.eot");
+	src: local("../../fonts/Avenir Next Cyr Heavy"), local("AvenirNextCyr-Heavy"),
+		url("../../fonts/AvenirNextCyr-Heavy.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../../AvenirNextCyr-Heavy.woff") format("woff"),
+		url("../../fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../../fonts/AvenirNextCyr-Medium.eot");
+	src: local("../../fonts/Avenir Next Cyr Medium"), local("../../AvenirNextCyr-Medium"),
+		url("../../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../../AvenirNextCyr-Medium.woff") format("woff"),
+		url("../../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir Next Cyr";
+	src: url("../../fonts/AvenirNextCyr-Regular.eot");
+	src: local("../../fonts/Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"),
+		url("../../fonts/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../../fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
+		url("../../fonts/AvenirNextCyr-Regular.woff") format("woff"),
+		url("../../fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}

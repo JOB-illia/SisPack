@@ -1,20 +1,83 @@
 {% include "html/_document-header.html" %}
 
 <div class="workspace">
-    <div class="workspace__cont">
+   <div class="workspace__cont">
 
-        <div class="workspace__header">
-            {% include "html/header.html" %}
-        </div>
-        <main class="workspace__content">
-            Rjy
-        </main>
-        <div class="workspace__footer">
-            {% include "html/footer.html" %}
-        </div>
+      <div class="workspace__header">
+         {% include "html/header.html" %}
+      </div>
+      <main class="workspace__content">
+         <section class="first-screen">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__images">
+                        <img src="img/slide1.png" alt="" />
+                     </div>
+                     <div class="first-screen__bottom">
+                        <a href="#" class="btn-to-purchases">
+                           <i class="icon-arrow-white"></i>
+                           До покупок
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__images">
+                        <img src="img/slide1.png" alt="" />
+                     </div>
+                     <div class="first-screen__bottom">
+                        <a href="#" class="btn-to-purchases">
+                           <i class="icon-arrow-white"></i>
+                           До покупок
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__images">
+                        <img src="img/slide2.png" alt="" />
+                     </div>
+                     <div class="first-screen__bottom">
+                        <a href="#" class="btn-to-purchases">
+                           <i class="icon-arrow-white"></i>
+                           До покупок
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__images">
+                        <img src="img/slide3.png" alt="" />
+                     </div>
+                     <div class="first-screen__bottom">
+                        <a href="#" class="btn-to-purchases">
+                           <i class="icon-arrow-white"></i>
+                           До покупок
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="swiper-slide__images">
+                        <img src="img/slide4.png" alt="" />
+                     </div>
+                     <div class="first-screen__bottom">
+                        <a href="#" class="btn-to-purchases">
+                           <i class="icon-arrow-white"></i>
+                           До покупок
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+            </div>
+         </section>
+      </main>
+      <div class="workspace__footer">
+         {% include "html/footer.html" %}
+      </div>
 
 
-    </div>
+   </div>
 </div>
 
 {% include "html/_document-footer.html" %}
