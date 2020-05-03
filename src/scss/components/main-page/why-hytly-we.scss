@@ -1,0 +1,47 @@
+.why-hytly-we {
+   // .why-hytly-we__container
+   margin-bottom: 70px;
+   &__container {
+      @include container($wrap-content);
+      padding: 0px 15px;
+      @include space-between();
+      align-items: stretch;
+   }
+   &__title-h2 {
+      flex-basis: 100%;
+   }
+   // .why-hytly-we__items
+
+   &__items {
+      flex-basis: 24%;
+      > i {
+         margin-bottom: 60px;
+      }
+      @include mmax($md3) {
+         flex-basis: 50%;
+         margin-bottom: 10px;
+         > i {
+            margin: 0px auto 20px;
+         }
+         > p {
+            text-align: center;
+         }
+      }
+   }
+}
+.icon-cool {
+   @include icon(36px, 45px, "cool.svg");
+   display: block;
+}
+.icon-car-mark {
+   @include icon(36px, 45px, "car.svg");
+   display: block;
+}
+.icon-point {
+   @include icon(36px, 45px, "icon3.svg");
+   display: block;
+}
+.icon-box {
+   @include icon(36px, 45px, "box.svg");
+   display: block;
+}

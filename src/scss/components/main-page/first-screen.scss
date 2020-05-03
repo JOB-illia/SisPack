@@ -1,12 +1,12 @@
 .first-screen {
    position: relative;
    overflow: hidden;
-   height: calc(100vh - (116px));
    margin: 75px auto 0;
    // .first-screen__bottom
    &__bottom {
       @include container($wrap-content);
-      padding: 0px 15px;
+      border-bottom: 1px solid rgba(57, 49, 133, 0.25);
+      padding: 0px 15px 49px 15px;
    }
    .swiper-slide {
       // .swiper-slide__images
@@ -21,6 +21,30 @@
             position: absolute;
             top: 0;
             left: 0;
+         }
+      }
+   }
+   @include mmax(1591) {
+      .swiper-button-prev {
+         left: 104px;
+      }
+      .swiper-button-next {
+         left: 208px;
+      }
+   }
+   @include mmax(1283) {
+      .swiper-button-prev {
+         left: 15px;
+      }
+      .swiper-button-next {
+         left: 119px;
+      }
+   }
+   @include mmax($md2) {
+      margin: 0px auto 0;
+      .swiper-slide {
+         &__images {
+            padding: 0px 0px 60% 0px;
          }
       }
    }
@@ -48,16 +72,214 @@
    > i {
       transform: rotate(-90deg);
       margin-right: 5px;
+      z-index: 99;
    }
    &:hover {
       background-color: darken($c-purple, 15%);
+   }
+   z-index: 9999999;
+
+   position: relative;
+   @include mmax($md2) {
+      width: 150px;
+      height: 60px;
+   }
+   @include mmax(543) {
+      margin: 10px auto;
    }
 }
 .icon-arrow-white {
 }
 .swiper-button-next {
+   width: 104px;
+   height: 100px;
+   z-index: 999;
+   outline: none;
+   top: auto;
+   bottom: 49px;
+   right: auto;
+   left: 22%;
+   &::after {
+      display: none;
+   }
+   > i {
+      z-index: 999;
+   }
+   &:hover {
+      > i {
+         background: transparent url(../i/slider-arrow-hover.svg) center center no-repeat;
+         transform: rotate(0);
+      }
+   }
+   @include mmax($md2) {
+      left: 66px !important;
+      height: 60px;
+   }
+   @include mmax(543) {
+      right: -18px !important;
+      left: auto !important;
+      top: 30%;
+      bottom: auto;
+      margin: auto;
+      &::before {
+         width: 60px;
+         content: "";
+         @include full-abs();
+         margin: auto;
+         background: #ffffff;
+         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.166582);
+         border-radius: 4px;
+         height: 60px;
+      }
+      > i {
+         margin-left: 0;
+      }
+   }
+   @include mmax($md3) {
+      top: 20%;
+   }
 }
 .swiper-button-prev {
+   width: 104px;
+   height: 100px;
+   outline: none;
+   top: auto;
+   z-index: 99;
+   bottom: 49px;
+   right: auto;
+   left: 17%;
+   &::before {
+      content: "";
+      @include full-abs();
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.166582);
+      border-radius: 4px;
+      width: 208px;
+      height: 100px;
+   }
+
+   &::after {
+      display: none;
+   }
+   > i {
+      z-index: 999;
+   }
+   &:hover {
+      > i {
+         background: transparent url(../i/slider-arrow-hover.svg) center center no-repeat;
+         transform: rotate(-180deg);
+      }
+   }
+   @include mmax($md2) {
+      height: 60px;
+      &::before {
+         height: 60px;
+         width: 150px;
+      }
+      > i {
+         margin-left: -30px;
+      }
+   }
+   @include mmax(543) {
+      left: -18px !important;
+      top: 30%;
+      bottom: auto;
+      margin: auto;
+      &::before {
+         width: 60px;
+      }
+      > i {
+         margin-left: 0;
+      }
+   }
+   @include mmax($md3) {
+      top: 20%;
+   }
 }
-.swiper-pagination {
+.swiper-pagination-bullet {
+   width: 8px;
+   height: 8px;
+   opacity: 0.25;
+   border: 1px solid $c-purple;
+   background: none;
+   margin-right: 30px !important;
+   &:last-child {
+      margin: 0px 0px 0px 0px !important;
+      padding: 0px 0px 0px 0px !important;
+   }
+   @include mmax($md2) {
+      margin-right: 20px !important;
+   }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+   bottom: 89px;
+   @include mmax($md2) {
+      bottom: 70px;
+   }
+   @include mmax(543) {
+      bottom: 10px;
+   }
+}
+.swiper-pagination-bullet-active {
+   background: $c-purple;
+   opacity: 1;
+}
+.icon-slide {
+   @include icon(22px, 47px, "slider-arrow.svg");
+   display: block;
+}
+.icon-slide--prev {
+   transform: rotate(-180deg);
+}
+.workspace__social-medical {
+   @include full-fix();
+   @include flc-center-center();
+   flex-direction: column;
+   height: 40px * 3;
+   margin: auto;
+   z-index: 99;
+   width: 40px;
+   left: 0;
+   right: auto;
+   background: $c-white;
+}
+.icon-instagram {
+   @include icon(40px, 40px, "instagramm.svg");
+   display: block;
+}
+.icon-viber {
+   @include icon(40px, 40px, "viber.svg");
+   display: block;
+}
+.icon-messange {
+   @include icon(40px, 40px, "email.svg");
+   display: block;
+}
+
+.workspace__call {
+   @include full-fix();
+   left: auto;
+   top: auto;
+   right: 40px;
+   bottom: 66px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background: #d84444;
+   box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.26);
+   @include flc-center-center();
+   transition: 0.5s;
+   cursor: pointer;
+   z-index: 99;
+   &:hover {
+      transform: scale(1.2) rotate(360deg);
+   }
+   @include mmax($md3) {
+      transform: scale(0.7);
+      right: 0;
+   }
+}
+.icon-call {
+   @include icon(28px, 28px, "phone-big.svg");
 }

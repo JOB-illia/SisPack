@@ -16,15 +16,17 @@ $md4: 479.98;
 // Colors
 $c-white: #ffffff;
 $c-black: #000000;
-$c-background-body: #fafafa;
+$c-background-body: #e5e5e5;
 $c-purple: #393185;
 $c-red: #d84444;
 $c-hover: #d84444;
-
+$c-black-title: #3f3f3f;
+$c-yellow: #fbba58;
+$c-mask: #d8d8d8;
 // Time
 $time-fast: 300ms;
 
 // Timing functions
 $timing-functions: (
-	"easeInOutCubic": cubic-bezier(0.645, 0.045, 0.355, 1),
+   "easeInOutCubic": cubic-bezier(0.645, 0.045, 0.355, 1),
 );

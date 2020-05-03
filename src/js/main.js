@@ -20,9 +20,13 @@ window.addEventListener('DOMContentLoaded', () => {
       gamburgerHead.classList.toggle('_gamburder-head-active');
       gamburgerBody.classList.toggle('_gamburger-body-active');
    });
-   //window.addEventListener('scroll', function (event) {
-   //let target = event.target;
-   //});
+   window.addEventListener('scroll', function (event) {
+      if (document.documentElement.scrollTop >= 116) {
+         headerBottom.classList.add('_fixed-menu');
+      } else {
+         headerBottom.classList.remove('_fixed-menu');
+      }
+   });
 
 
    if (window.screen.availWidth < 991.98) {
@@ -44,7 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
       headerTop.prepend(boxSearch);
       menu.appendChild(basket);
       menu.appendChild(boxExit);
-      boxsHeaderTop[2].prepend(searchIcon);
 
 
       // модальное окно телефонов
@@ -63,7 +66,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
       // создание и присваивание иконки поиска на клик 
+
       let searchIcon = document.createElement('div');
+      boxsHeaderTop[2].prepend(searchIcon);
       searchIcon.classList.add('icon-search');
       searchIcon.classList.add('icon-search--click');
       searchIcon.addEventListener('click', () => {
@@ -77,4 +82,6 @@ window.addEventListener('DOMContentLoaded', () => {
          }
       });
    }
+
+
 });
