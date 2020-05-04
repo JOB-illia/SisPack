@@ -9,6 +9,9 @@
    }
    &__title-h2 {
       flex-basis: 100%;
+      @include mmax($md4) {
+         margin: 0 0 20px;
+      }
    }
    // .why-hytly-we__items
 

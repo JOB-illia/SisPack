@@ -238,7 +238,7 @@
    flex-direction: column;
    height: 40px * 3;
    margin: auto;
-   z-index: 99;
+   z-index: 9999;
    width: 40px;
    left: 0;
    right: auto;
@@ -282,4 +282,14 @@
 }
 .icon-call {
    @include icon(28px, 28px, "phone-big.svg");
+}
+@include mmax($md4) {
+   .first-screen .swiper-button-prev {
+      transform: scale(0.6);
+      left: -30px !important;
+   }
+   .first-screen .swiper-button-next {
+      transform: scale(0.6);
+      right: -30px !important;
+   }
 }

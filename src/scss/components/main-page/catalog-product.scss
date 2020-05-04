@@ -33,6 +33,10 @@
       border-bottom: 1px solid rgba(57, 49, 133, 0.25);
       @include space-between();
       margin-top: 69px;
+      @include mmax($md4) {
+         margin-top: 0;
+         padding-bottom: 20px;
+      }
    }
 
    // .catalog-product__navigation-pagination
@@ -141,4 +145,7 @@
 .btn-to-purchases--height {
    width: 208px;
    height: 65px;
+   @include mmax($md4) {
+      margin-top: 40px;
+   }
 }

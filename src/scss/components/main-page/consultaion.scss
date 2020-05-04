@@ -1,0 +1,171 @@
+.consultation {
+   position: relative;
+   @include container($wrap-content);
+   padding: 0px 15px;
+   margin-left: 0;
+   background: $c-white;
+   z-index: 999;
+   margin-bottom: -197px;
+
+   // .consultation__container
+
+   &__container {
+      @include container(900px);
+      margin-right: 0;
+      padding: 60px 0px;
+   }
+
+   // .consultation__title
+
+   &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: rem(27);
+      line-height: rem(37);
+      letter-spacing: rem(2);
+      color: $c-black-title;
+      margin: 0 0 20px;
+   }
+
+   // .consultation__subtitle
+
+   &__subtitle {
+      font-style: normal;
+      font-weight: bold;
+      max-width: rem(355);
+      font-size: rem(14);
+      line-height: rem(19);
+      letter-spacing: rem(1);
+      color: $c-black-title;
+      margin: 0 0 60px;
+   }
+
+   // .consultation__form
+   &__form {
+      @include flc-start();
+      align-items: stretch;
+   }
+   // .consultation__input-left
+   &__input-left {
+      display: block;
+      width: 260px;
+      margin-right: 40px;
+
+      > input {
+         display: block;
+         font-family: "PT Sans", sans-serif;
+         font-style: normal;
+         font-weight: normal;
+         font-size: rem(14);
+         line-height: rem(17);
+         letter-spacing: rem(1);
+         color: $c-black-title;
+         padding: 0px 0px 18px 0px;
+         border-bottom: 1px solid rgba(63, 63, 63, 0.45);
+         border-top: 0px solid #000;
+         border-left: 0 solid #000;
+         border-right: 0px;
+         margin-bottom: 21px;
+         width: 100%;
+         outline: none;
+         &:last-child {
+            margin: 0px 0px 0px 0px;
+         }
+         @include mmax($md4) {
+            width: calc(100% - 30px);
+         }
+      }
+      @include mmax($md2) {
+         flex-basis: 100%;
+         width: 100%;
+         margin-bottom: 20px;
+         margin-right: 0;
+      }
+   }
+   // .consultation__textarea
+   &__textarea {
+      width: 260px;
+      border: 1px solid rgba(63, 63, 63, 0.45);
+      padding: 16px 10px 10px 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem(14);
+      line-height: rem(17);
+      letter-spacing: rem(1);
+      color: $c-black-title;
+      font-family: "PT Sans", sans-serif;
+      outline: none;
+      resize: none;
+      @include mmax($md2) {
+         width: 100%;
+         min-height: 150px;
+      }
+      @include mmax($md4) {
+         width: calc(100% - 30px);
+      }
+   }
+   // .consultation__right
+   &__right {
+      @include flc-start();
+      align-items: stretch;
+      padding-top: 10px;
+      margin-left: 44px;
+      @include mmax($md2) {
+         display: block;
+         margin-left: 0;
+      }
+      > input {
+         position: absolute;
+         top: -999999999999px;
+         left: -99999999999px;
+         visibility: hidden;
+         opacity: 0;
+      }
+      > label {
+         font-style: normal;
+         font-weight: normal;
+         font-size: rem(14);
+         line-height: rem(17);
+         letter-spacing: rem(1);
+         color: $c-black-title;
+         font-family: "PT Sans", sans-serif;
+         padding-left: 30px;
+         position: relative;
+         &::before {
+            content: "";
+            @include full-abs();
+            right: auto;
+            bottom: auto;
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba(63, 63, 63, 0.45);
+            box-sizing: border-box;
+         }
+      }
+   }
+   // .consultation__send-form
+   &__send-form {
+      flex-basis: 100%;
+      @include reset-button();
+      @include flc-start();
+      > i {
+         transform: rotate(-90deg);
+         margin-right: 8px;
+      }
+      font-style: normal;
+      font-weight: bold;
+      font-size: rem(10);
+      line-height: rem(14);
+      text-align: center;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: $c-purple;
+      &:hover {
+         text-decoration: none;
+      }
+      @include mmax($md2) {
+         margin-top: 30px;
+      }
+   }
+}
