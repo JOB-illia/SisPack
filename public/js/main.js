@@ -83,5 +83,33 @@ window.addEventListener('DOMContentLoaded', () => {
       });
    }
 
+   // filter 
+   let filterBox = document.querySelectorAll('.click-link'),
+      filterSubItems = document.querySelectorAll('.filter__sub-items');
+   filterBox.forEach(function (items) {
+      items.addEventListener('click', function (e) {
+         e.preventDefault();
+         items.nextElementSibling.classList.toggle('filter__sub-items--active');
+      });
+   });
+   // filter-mobile 
+   let burgerFilterMobile = document.querySelector('.filter-burger'),
+      boxFilterMobile = document.querySelector('.filter');
+   burgerFilterMobile.addEventListener('click', function () {
+      boxFilterMobile.classList.toggle('_filter--active');
+      this.classList.toggle('_burger-filter--active');
+   })
+
+
+
+   // sort 
+
+   let sortHead = document.querySelectorAll('.sort__head');
+   sortHead.forEach(function (items) {
+      items.addEventListener('click', function () {
+         items.nextElementSibling.classList.toggle('sort__body--active');
+      });
+   });
+
 
 });

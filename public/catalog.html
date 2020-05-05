@@ -1,0 +1,595 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sis Pack</title>
+	
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+<div class="workspace">
+   <div class="workspace__cont">
+
+      <div class="workspace__header">
+         <header class="header">
+	<div class="header__top">
+		<div class="header__row">
+			<div class="header__item">
+				<a href="" class="header__logo"><img src="i/logo.svg" alt="logo" /></a>
+			</div>
+			<div class="header__item">
+				<div class="header__contact">
+					<i class="icon-phone"></i>
+					<div class="header__contact-body">
+						<a href="tel:+38 (099) 071 50 40" class="header__link-contact">+38 (099) 071 50 40</a>
+						<a href="tel:+38 (096) 8-500 500" class="header__link-contact">+38 (096) 8-500 500</a>
+						<a href="tel:(0342) 5-0000-5" class="header__link-contact">(0342) 5-0000-5</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__item">
+				<a href="#" class="header__exit"><p class="txt-default">Выход</p><i class="icon-exit"></i></a>
+				<div class="header__languange">
+					<div class="header__head">
+						<span class="header__lang-active">RU</span>
+						<i class="arrow-down"></i>
+					</div>
+					<div class="header__body">
+						<a href="#" class="header__lang-select">EN</a>
+						<a href="#" class="header__lang-select">UA</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__row-bottom">
+			<div class="header__burger burger--position">
+				<i class="one"></i>
+				<i class="two"></i>
+				<i class="three"></i>
+			</div>
+			<nav class="header__nav">
+				<ul class="header__menu menu">
+					<li><a href="#" class="header__menu-link">Головна</a></li>
+					<li>
+						<a href="#" class="header__menu-link">Каталог товарів <i class="icon-arrow-white"></i></a>
+						<ul class="menu__sub-menu">
+							<li><a href="#">Sub-menu 1</a></li>
+							<li><a href="#">Sub-menu 1</a></li>
+							<li><a href="#">Sub-menu 1</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="header__menu-link">акції</a></li>
+					<li><a href="#" class="header__menu-link">Оплата-Доставка</a></li>
+					<li><a href="#" class="header__menu-link">Контакти</a></li>
+				</ul>
+			</nav>
+			<form action="#" class="header__search" method="GET">
+				<input type="text" name="search" id="search">
+				<button type="submit"><i class="icon-search"></i></button>
+			</form>
+			<div class="header__basket basket">
+				<div class="basket__head">
+					<p class="paragraphy">Корзина</p>
+					<i class="icon-basket"></i>
+					<span class="basket__goods-inside">1</span>
+				</div>
+				<div class="basket__body">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+      </div>
+      <main class="workspace__content">
+         <div class="workspace__crumbs">
+            <a href="#">Каталог товарів</a>
+
+         </div>
+         <section class="catalog">
+            <div class="catalog__row">
+               <div class="filter-burger">
+                  <div class="filter-burger__icon">
+                     <i></i>
+                     <i></i>
+                     <i></i>
+                  </div>
+                  <p class="filter-burger__text text-fz12">Фільтр</p>
+               </div>
+               <div class="catalog__left-filter filter">
+                  <div class="filter__items">
+                     <p class="filter__title title-fz14">ціна</p>
+                     <p class="filter__line-price">
+                        <span class="circle circle--left"></span>
+                        <span class="circle"></span>
+                     </p>
+                     <div class="filter__items-input">
+                        <input type="number" min="13.00" placeholder="13.00" value="13.00">
+                        <input type="number" min="13.00" placeholder="13.00" value="13.00">
+                     </div>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Аксесссуари для бару</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Господарські товари</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Пакети</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#" class="click-link">
+                        Пакети для сміття <i class="icon-right-black"></i>
+                     </a>
+                     <div class="filter__sub-items">
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                     </div>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Побутова хімія</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Одноразовий посуд</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#" class="click-link">Паперова група <i class="icon-right-black"></i></a>
+                     <div class="filter__sub-items">
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+                        <a href="#">Пакети для сміття</a>
+
+                     </div>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Свічки</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Санітарно-гігеєнічні товари</a>
+                  </div>
+                  <div class="filter__items">
+                     <a href="#">Упаковка для товарів</a>
+                  </div>
+               </div>
+               <div class="catalog__right-product">
+                  <div class="catalog__sort">
+                     <div class="catalog__sort-left sort">
+                        <div class="sort__head">
+                           <p class="title-fz14">сортувати: за ціною</p>
+                           <i class="icon-right-black"></i>
+                        </div>
+                        <div class="sort__bottom">
+                           <a href="#">сортувати: за ціною</a>
+                           <a href="#">сортувати: за ціною</a>
+                           <a href="#">сортувати: за ціною</a>
+                           <a href="#">сортувати: за ціною</a>
+                        </div>
+                     </div>
+                     <div class="catalog__sort-left sort">
+                        <div class="sort__head">
+                           <p class="title-fz14">К-сть товару: <span>25</span></p>
+                           <i class="icon-right-black"></i>
+                        </div>
+                        <div class="sort__bottom">
+                           <a href="#">20</a>
+                           <a href="#">15</a>
+                           <a href="#">10</a>
+                           <a href="#">5</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="catalog__product">
+
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod1.jpg" alt="product 1" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod2.jpg" alt="product 2" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod1.jpg" alt="product 3" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod4.jpg" alt="product 4" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod5.jpg" alt="product 5" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod6.jpg" alt="product 6" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod7.jpg" alt="product 7" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod8.jpg" alt="product 8" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+
+
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod11.jpg" alt="product 11" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod12.jpg" alt="product 12" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod13.jpg" alt="product 13" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod14.jpg" alt="product 14" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+
+
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod15.jpg" alt="product 15" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod16.jpg" alt="product 16" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod1.jpg" alt="product 1" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod2.jpg" alt="product 3" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+
+
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod3.jpg" alt="product 3" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod4.jpg" alt="product 4" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+                     <div class="catalog__product-elem product-elem">
+                        <div class="product-elem__images">
+                           <img src="img/prod5.jpg" alt="product 5" />
+                        </div>
+                        <p class="product-elem__name text-fz12">ТРУБОЧКИ ПАПЕРОВІ КОЛЬОРОВІ 19,5 СМ 50ШТ/УП</p>
+                        <p class="product-elem__price text-fz19">164.88 грн</p>
+                        <p class="product-elem__quantity">К-сть в упаковці: 100</p>
+                     </div>
+
+                  </div>
+                  <div class="catalog__pagination pagination">
+                     <a href="#" class="pagination__back">
+                        <i class="icon-slide"></i>
+                     </a>
+                     <div class="pagination__list-page">
+                        <a href="#" class="pagination__page pagination__page--active">1</a>
+                        <a href="#" class="pagination__page">2</a>
+                        <a href="#" class="pagination__page">3</a>
+                        <a href="#" class="pagination__page">4</a>
+                        <a href="#" class="pagination__page">5</a>
+                        <a href="#" class="pagination__page">6</a>
+                        <a href="#" class="pagination__page">7</a>
+                        <a href="#" class="pagination__page">8</a>
+                        <a href="#" class="pagination__page">9</a>
+                        <a href="#" class="pagination__page">10</a>
+                        <a href="#" class="pagination__page">11</a>
+                     </div>
+                     <a href="#" class="pagination__next">
+                        <i class="icon-slide"></i>
+                     </a>
+                  </div>
+               </div>
+
+
+            </div>
+         </section>
+
+         <section class="why-hytly-we">
+            <div class="why-hytly-we__container">
+               <p class="why-hytly-we__title-h2 title-h2">Чому саме ми? Все просто!</p>
+               <div class="why-hytly-we__items">
+                  <i class="icon-cool"></i>
+                  <p class="text-fz12">Контроль якості</p>
+               </div>
+               <div class="why-hytly-we__items">
+                  <i class="icon-car-mark"></i>
+                  <p class="text-fz12">Доставка</p>
+               </div>
+               <div class="why-hytly-we__items">
+                  <i class="icon-point"></i>
+                  <p class="text-fz12">Конкурентні ціни</p>
+               </div>
+               <div class="why-hytly-we__items">
+                  <i class="icon-box"></i>
+                  <p class="text-fz12">Більше 1000 товарів</p>
+               </div>
+
+            </div>
+
+         </section>
+         <section class="consultation">
+            <div class="consultation__container">
+               <p class="consultation__title">Отримати консультацію</p>
+               <p class="consultation__subtitle">Маєте запитання? Залишіть ваші контакти і ми вам зателефонуємо!</p>
+               <form action="#" class="consultation__form">
+                  <div class="consultation__input-left">
+                     <input type="text" placeholder="Ім`я">
+                     <input type="tel" placeholder="Телефон">
+                  </div>
+                  <textarea placeholder="Ваше повідомлення" class="consultation__textarea"></textarea>
+                  <div class="consultation__right">
+                     <input type="checkbox" id="dont-robot">
+                     <label for="dont-robot">Я не робот</label>
+                     <button type="submit" class="consultation__send-form">
+                        <i class="arrow-down"></i>
+                        відправити
+                     </button>
+                  </div>
+               </form>
+            </div>
+
+         </section>
+      </main>
+      <div class="workspace__footer">
+         <footer class="footer">
+   <div class="footer__row">
+      <div class="footer__column">
+         <ul class="footer__menu">
+            <li class="footer__items"><a href="#">Головна</a></li>
+            <li class="footer__items"><a href="#">акції</a></li>
+            <li class="footer__items"><a href="#">Каталог товарів <i class="icon-arrow-white"></i></a></li>
+            <li class="footer__items"><a href="#">Контакти</a></li>
+         </ul>
+      </div>
+      <div class="footer__column footer__column--title">
+         <p class="footer__sub-title">Телефони</p>
+         <ul class="footer__menu">
+            <li class="footer__items"><a href="tel:+38 (099) 071 50 40">+38 (099) 071 50 40</a></li>
+            <li class="footer__items"><a href="tel:+38 (096) 8-500 500">+38 (096) 8-500 500</a></li>
+            <li class="footer__items"><a href="tel:(0342) 5-0000-5">(0342) 5-0000-5</a></li>
+         </ul>
+      </div>
+      <div class="footer__column footer__column--title">
+         <p class="footer__sub-title">Адреса</p>
+         <ul class="footer__menu">
+            <li class="footer__items footer__items--adress"><a>м. Івано-Франківськ, вул. Промислова, 23/а</a></li>
+         </ul>
+      </div>
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.9209523527534!2d24.712121216063352!3d48.93594740319605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c109f416c9ef%3A0x8c3639b71c9dd11e!2zMjNBLCDRg9C7LiDQn9GA0L7QvNGL0YjQu9C10L3QvdCw0Y8sIDIz0JAsINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC6LCDQmNCy0LDQvdC-LdCk0YDQsNC90LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA3NjAwMA!5e0!3m2!1sru!2spl!4v1588600314588!5m2!1sru!2spl"
+         width="" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+         tabindex="0"></iframe>
+   </div>
+   <div class="footer__bottom">
+      <a href="#" class="footer__quality-certificates">СЕРТИФІКАТИ ЯКОСТІ</a>
+   </div>
+   <p class="footer__copy">&copy; designed & developed by UniversalWeb</p>
+</footer>
+      </div>
+
+
+   </div>
+</div>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+<script>
+   var wow = new WOW(
+      {
+         boxClass: 'wow',      // animated element css class (default is wow)
+         animateClass: 'animated', // animation css class (default is animated)
+         offset: -100,          // distance to the element when triggering the animation (default is 0)
+         mobile: false,       // trigger animations on mobile devices (default is true)
+         live: true,       // act on asynchronously loaded content (default is true)
+         callback: function (box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+         },
+         scrollContainer: null,    // optional scroll container selector, otherwise use window,
+         resetAnimation: true,     // reset animation on end (default is true)
+      }
+   );
+   wow.init();
+
+   var swiper = new Swiper('.first-screen .swiper-container', {
+      speed: 800,
+      effect: 'fade', // "slide", "fade", "cube", "coverflow" or "flip"
+      autoHeight: false,
+      spaceBetween: 0,
+      autoplay: true,
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      centeredSlides: false,
+      loop: false,
+      // slideNextClass: 'name-class',
+      // slidePrevClass: 'name-class',
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+         el: '.swiper-pagination',
+      },
+      // breakpoints: {
+      //  320: {
+      //    slidesPerView: 2,
+      //    spaceBetween: 20
+      //  },
+      //  480: {
+      //    slidesPerView: 3,
+      //    spaceBetween: 30
+      //  },
+      //  640: {
+      //    slidesPerView: 4,
+      //    spaceBetween: 40
+      //  }
+      //}
+      //on: {
+      //  init: function () {
+      //    console.log('swiper initialized'); 
+      //  },
+      //},
+
+   });
+   var swiper = new Swiper('.stocks-and-news .swiper-container', {
+      speed: 800,
+      //effect: 'fade', "slide", "fade", "cube", "coverflow" or "flip"
+      autoHeight: false,
+      spaceBetween: 0,
+      autoplay: true,
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      centeredSlides: false,
+      loop: false,
+      // slideNextClass: 'name-class',
+      // slidePrevClass: 'name-class',
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+         el: '.stocks-and-news__wrap .swiper-pagination',
+      },
+      // breakpoints: {
+      //  320: {
+      //    slidesPerView: 2,
+      //    spaceBetween: 20
+      //  },
+      //  480: {
+      //    slidesPerView: 3,
+      //    spaceBetween: 30
+      //  },
+      //  640: {
+      //    slidesPerView: 4,
+      //    spaceBetween: 40
+      //  }
+      //}
+      //on: {
+      //  init: function () {
+      //    console.log('swiper initialized'); 
+      //  },
+      //},
+
+   });
+   var swiper = new Swiper('.catalog-product .swiper-container', {
+      speed: 800,
+      spaceBetween: 0,
+      autoplay: false,
+      slidesPerView: 1,
+      loop: false,
+      navigation: {
+         nextEl: '.catalog-product__navigation-pagination .swiper-button-next',
+         prevEl: '.catalog-product__navigation-pagination .swiper-button-prev',
+      },
+      pagination: {
+         el: '.catalog-product__navigation-pagination .swiper-pagination',
+      },
+   });
+</script>
+</body>
+
+</html>
